@@ -12,6 +12,7 @@ const sidebarToggleButton = document.getElementsByClassName('menu-btn'),
 const designDevelopment = document.getElementById('design-development'),
 	ecommerce = document.getElementById('ecommerce'),
 	marketing = document.getElementById('marketing');
+	voting = document.getElementById('voting');
 
 const allServices = [designDevelopment, ecommerce, marketing];
 
@@ -132,7 +133,33 @@ cubehash -> shabal -> echo -> blake -> blake -> simd -> bmw -> simd -> hamsi ->
 shavite -> whirlpool -> shavite -> luffa -> groestl -> shavite -> cubehash
 </div>`;
 
-const marketHTML = `<div class="coming-soon"><h2>COMING SOON! <span class="text-blue">:)</span></h2></div>`;
+const marketHTML = `<div class="col-12 title-section">
+<h4 class="service-title">Messaging Protocol</h4>
+</div>
+<h4 class="col-12 text-blue">Comming Soon!</h4>
+<div class="col-12 col-lg-6 skill">
+<img src="img/marketing.png" alt="messaging" class="image">
+<h5 class="name">the Issue</h5>
+<p class="desc">A common problem with tokens/assets is that the token issuer cannot communicate with the token holders. This must be handled very carefully because the token holders do not always wish to be identified. The communication should allow the token holder to opt-out at any time. The message system should only allow select parties to use the message channel so that it is not a spam conduit.</p></div>
+<div class="col-12 col-lg-6 skill">
+<img src="img/marketing.png" alt="messaging" class="image">
+<h5 class="name">The Solution</h5>
+<p class="desc">The messaging system uses unique tokens to allow communication on the main token channel. For example, the COMPANY token would have a ~COMPANY:Alert token which allows alerts to be sent to all holders of COMPANY.
+<br>
+Messaging to token holders by authorized senders will be layered on top of the unique assets. The unique assets will act as a "talking stick" allowing messages to be sent by the channel owner. The KAAAWWW Protocol will be published with more information on this separately.</p></div>`;
+
+const voteHTML = `<div class="col-12 title-section">
+<h4 class="service-title">Voting</h4>
+</div>
+<h4 class="col-12 text-blue">Comming Soon!</h4>
+<div class="col-12 col-lg-6 skill">
+<img src="img/voting.png" alt="messaging" class="image">
+<h5 class="name">The process</h5>
+<p class="desc"By using the messaging system, the holders of a token can be notified of the vote, and by automatically issuing a VOTE token to every holder of a token, the vote can be automated from the client or through a web or mobile interface using the protocol built into Ravencoin></p></div>
+<div class="col-12 col-lg-6 skill">
+<img src="img/voting.png" alt="messaging" class="image">
+<h5 class="name">how it works</h5>
+<p class="desc">Tokens are created to represent votes. Ravencoin will create an exact number of VOTE tokens and distribute them 1:1 to the token holders. These votes can be sent via the protocol to addresses that tally the votes. Because the voting tokens move the same way as assets, delegation of votes, sometimes known as delegative or liquid democracy is possible.</p></div>`;
 
 window.addEventListener('click', outsideModalClick);
 
@@ -150,6 +177,8 @@ function identifyService() {
 		detailsDiv.innerHTML = ecomHTML;
 	} else if (reqService === 'marketing') {
 		detailsDiv.innerHTML = marketHTML;
+	} else if (reqService === 'voting') {
+		detailsDiv.innerHTML = voteHTML;
 	} else {
 		// console.log('FAILLLL')
 	}

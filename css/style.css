@@ -301,6 +301,10 @@ body::-webkit-scrollbar-thumb {
   background: url("../img/marketing.png") center center no-repeat;
   background-size: contain;
 }
+.services .section-content .voting .image {
+  background: url("../img/voting.png") center center no-repeat;
+  background-size: contain;
+}
 .modal-services {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 305;
