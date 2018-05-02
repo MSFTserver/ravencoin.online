@@ -155,7 +155,7 @@ const voteHTML = `<div class="col-12 title-section">
 <div class="col-12 col-lg-6 skill">
 <img src="img/voting.png" alt="messaging" class="image">
 <h5 class="name">The process</h5>
-<p class="desc">By using the messaging system, the holders of a token can be notified of the vote, and by automatically issuing a VOTE token to every holder of a token, the vote can be automated from the client or through a web or mobile interface using the protocol built into Ravencoin></p></div>
+<p class="desc">By using the messaging system, the holders of a token can be notified of the vote, and by automatically issuing a VOTE token to every holder of a token, the vote can be automated from the client or through a web or mobile interface using the protocol built into Ravencoin</p></div>
 <div class="col-12 col-lg-6 skill">
 <img src="img/voting.png" alt="messaging" class="image">
 <h5 class="name">how it works</h5>
