@@ -37,6 +37,7 @@ label {
   display: inline-block;
   font-size: x-large;
   padding: 5px;
+  margin-bottom: 20px;
 }
 .link-button:hover {
   -webkit-box-shadow: 0 15px 10px #aaaaaa;
@@ -132,6 +133,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   text-align: center;
   color: #fff;
+  margin-bottom: 60px;
 }
 .flex {
   display: -webkit-box;
@@ -261,6 +263,15 @@ body::-webkit-scrollbar-thumb {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 2em;
+}
+.link-title {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 4px solid #0a89ea;
 }
 .service-title {
     color: #fff;
