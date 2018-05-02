@@ -16,8 +16,8 @@ const designDevelopment = document.getElementById('design-development'),
 const allServices = [designDevelopment, ecommerce, marketing];
 
 // SIDEBAR LINKS & SECTION IDs -------------------
-let linkItems = ['go-home', 'go-about', 'go-services', 'go-portfolio'],
-	linkSections = ['home-section', 'about-section', 'services-section', 'portfolio-section'];
+let linkItems = ['go-home', 'go-about', 'go-services', 'go-portfolio', 'go-important-links'],
+	linkSections = ['home-section', 'about-section', 'services-section', 'portfolio-section', 'important-links-section'];
 
 function openNavMenu() {
 	navigationPanel.classList.add('shown');
