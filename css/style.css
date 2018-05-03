@@ -75,8 +75,7 @@ label {
   color: #444444;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  width: 150px;
-  height: 35px;
+  width: 200px;
   background-color: #0a89ea;
   border-radius: 25px;
   border: none;
@@ -84,7 +83,7 @@ label {
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 2px;
-  line-height: 35px;
+  font-size: 25px;
   display: inline-block;
 }
 .std-button:hover {
@@ -228,7 +227,7 @@ body::-webkit-scrollbar-thumb {
   margin: 1em auto 2em auto;
 }
 .circle-image .wrapper {
-  background: url("../img/cartoon.png") center center no-repeat;
+  background: url("../img/rvn.png") center center no-repeat;
   background-size: cover;
   -webkit-filter: drop-shadow(0 7px 1px #0a89ea);
   filter: drop-shadow(0 7px 1px #0a89ea);
@@ -287,22 +286,26 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
   color: #fff;
   letter-spacing: 1.5px;
-  font-size: 1.5em;
+  font-size: 30px;
 }
-.services .section-content .design-development .image {
-  background: url("../img/development.png") center center no-repeat;
+.services .section-content .assets .image {
+  background: url("../img/assets.png") center center no-repeat;
   background-size: contain;
 }
-.services .section-content .ecommerce .image {
-  background: url("../img/ecommerce.png") center center no-repeat;
+.services .section-content .algo .image {
+  background: url("../img/algo.png") center center no-repeat;
   background-size: contain;
 }
-.services .section-content .marketing .image {
-  background: url("../img/marketing.png") center center no-repeat;
+.services .section-content .messaging .image {
+  background: url("../img/messaging.png") center center no-repeat;
   background-size: contain;
 }
 .services .section-content .voting .image {
   background: url("../img/voting.png") center center no-repeat;
+  background-size: contain;
+}
+.services .section-content .halving .image {
+  background: url("../img/halving.png") center center no-repeat;
   background-size: contain;
 }
 .modal-services {
@@ -332,7 +335,7 @@ body::-webkit-scrollbar-thumb {
 .modal-services .wrapper {
   width: 90%;
   height: 90vh;
-  background-image: url("../img/810.jpg");
+  background-image: url("../img/alt-bg.jpg");
   background-size: cover;
   -webkit-box-shadow: 0 5px 10px #555;
   box-shadow: 0 5px 10px #555;
@@ -464,7 +467,6 @@ body::-webkit-scrollbar-thumb {
 .project .project-about .project-btn {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -482,6 +484,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
   color: #333333;
   letter-spacing: 1.5px;
+  padding-top: 20px
 }
 .project .project-about .project-desc {
   font-family: "Montserrat", sans-serif;
@@ -555,7 +558,7 @@ body::-webkit-scrollbar-thumb {
 #preloader .preloader-wrapper .preloader-inner {
   width: 100%;
   display: block;
-  background-image: url("https://pbs.twimg.com/profile_images/925345791014612993/jye2nT5F.jpg");
+  background-image: url("../img/pre-loader.jpg");
   background-size: cover;
   -webkit-animation: preloader-inner 2.3s infinite ease-in;
   animation: preloader-inner 2.3s infinite ease-in;
@@ -910,7 +913,7 @@ body::-webkit-scrollbar-thumb {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  background: url("../img/geometry.png");
+  background: url("../img/main-bg.png");
   background-attachment: scroll;
   background-size: auto auto;
   background-size: cover;

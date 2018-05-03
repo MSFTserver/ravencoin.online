@@ -9,12 +9,13 @@ const sidebarToggleButton = document.getElementsByClassName('menu-btn'),
 	sidebarToggle = sidebarToggleButton[0];
 
 // SERVICES DETAILS BUTTONS --------
-const designDevelopment = document.getElementById('design-development'),
-	ecommerce = document.getElementById('ecommerce'),
-	marketing = document.getElementById('marketing');
+const assets = document.getElementById('assets'),
+	algo = document.getElementById('algo'),
+	messaging = document.getElementById('messaging');
 	voting = document.getElementById('voting');
+	halving = document.getElementById('halving');
 
-const allServices = [designDevelopment, ecommerce, marketing, voting];
+const allServices = [assets, algo, messaging, voting, halving];
 
 // SIDEBAR LINKS & SECTION IDs -------------------
 let linkItems = ['go-home', 'go-about', 'go-services', 'go-portfolio', 'go-important-links'],
@@ -63,12 +64,12 @@ const detailsDiv = document.getElementById('service-details');
 
 let currentService = [];
 
-const devHTML = `<div class="col-12 title-section">
+const assetsHTML = `<div class="col-12 title-section">
 <h4 class="service-title">Asset Layer</h4>
 </div>
 <h4 class="col-12 text-blue">Comming Soon!</h4>
 <div class="col-12 col-lg-6 skill">
-<img src="img/responsive.png" alt="Asset Layer" class="image">
+<img src="img/asset-layer.png" alt="Asset Layer" class="image">
 <h5 class="name">What are Assets?</h5>
 <p class="desc">Assets are tokens that can be issued by users of the Raven protocol without the need to be mined. Users create these assets and decide their purpose and rules independent of the protocol. tokens are transferable and move with the same ease as other similarly functioning cryptocurrencies. In Ravencoin, an asset is just a limited quantity of a unique symbol, and transferable to any Ravencoin address. Assets created on the Raven protocol have several advantages: they are easier to use, tightly integrated with a native coin, and secured with fair POW mining and open source code not run by a centralized organization.</p>
 </div>
@@ -79,11 +80,11 @@ const devHTML = `<div class="col-12 title-section">
 bitcoin-like system that is fully asset aware. A system being asset aware provides two major advantages. First, it allows the client and RPC commands to protect the asset from being destroyed accidentally. Second, it allows a single native client to issue, track, and transfer the assets. Lastly, to provide security for the underlying assets, the bitcoin-like system functions only with a market value, a strong mining community, and wide distribution. Token names are guaranteed unique. The first to issue a token with a given name is the owner of that token project. The issuer of a token burns RVN and must provide a unique token name. The issuer determines the quantity issued, the number of decimal places, and whether they will be allowed to issue more of the same token in the future.</p>
 </div>`;
 
-const ecomHTML = `<div class="col-12 title-section">
+const algoHTML = `<div class="col-12 title-section">
 <h4 class="service-title">x16r Algorithm</h4>
 </div>
 <div class="col-12 col-lg-6 skill">
-<img src="img/partner.png" alt="Shopify Partner" class="image">
+<img src="img/asic.png" alt="asic" class="image">
 <h5 class="name">Asic Resistant</h5>
 <p class="desc">The hashing algorithms are the same proven algorithms used in X15 + SHA512, but the ordering is changed based on the hash of the previous block. This reordering does not make an ASIC impossible to build, but it does require that the ASIC adapts to additional input, which is more easily accomplished by a CPU or GPU.
 <br><br>
@@ -118,7 +119,7 @@ algorithms are as follows:</p>
 </div>
 </div>
 <div class="col-12 col-lg-6 skill">
-<img src="img/tailored.png" alt="Hash order Example" class="image">
+<img src="img/miner.png" alt="Hash order Example" class="image">
 <h5 class="name">Hash order Example</h5>
 <p class="desc">While chaining more algorithms together adds difficulty in constructing an ASIC, the X13, X15, and X17 all use the same ordering of hashing algorithms as the X11. This is likely to lead to faster manufacturing of ASICs for these algorithms as manufacturers only need to extend their existing design to accommodate the additional hashing algorithms.</p>
 Previous Block Hash:
@@ -133,16 +134,16 @@ cubehash -> shabal -> echo -> blake -> blake -> simd -> bmw -> simd -> hamsi ->
 shavite -> whirlpool -> shavite -> luffa -> groestl -> shavite -> cubehash
 </div>`;
 
-const marketHTML = `<div class="col-12 title-section">
+const messagingHTML = `<div class="col-12 title-section">
 <h4 class="service-title">Messaging Protocol</h4>
 </div>
 <h4 class="col-12 text-blue">Comming Soon!</h4>
 <div class="col-12 col-lg-6 skill">
-<img src="img/marketing.png" alt="messaging" class="image">
+<img src="img/messaging.png" alt="messaging" class="image">
 <h5 class="name">the Issue</h5>
 <p class="desc">A common problem with tokens/assets is that the token issuer cannot communicate with the token holders. This must be handled very carefully because the token holders do not always wish to be identified. The communication should allow the token holder to opt-out at any time. The message system should only allow select parties to use the message channel so that it is not a spam conduit.</p></div>
 <div class="col-12 col-lg-6 skill">
-<img src="img/marketing.png" alt="messaging" class="image">
+<img src="img/messaging.png" alt="messaging" class="image">
 <h5 class="name">The Solution</h5>
 <p class="desc">The messaging system uses unique tokens to allow communication on the main token channel. For example, the COMPANY token would have a ~COMPANY:Alert token which allows alerts to be sent to all holders of COMPANY.
 <br>
@@ -161,6 +162,20 @@ const voteHTML = `<div class="col-12 title-section">
 <h5 class="name">how it works</h5>
 <p class="desc">Tokens are created to represent votes. Ravencoin will create an exact number of VOTE tokens and distribute them 1:1 to the token holders. These votes can be sent via the protocol to addresses that tally the votes. Because the voting tokens move the same way as assets, delegation of votes, sometimes known as delegative or liquid democracy is possible.</p></div>`;
 
+const halveHTML = `<div class="col-12 title-section">
+<h4 class="service-title">Halving</h4>
+</div>
+<div class="col-12 col-lg-6 skill">
+<img src="img/halving.png" alt="messaging" class="image">
+<h5 class="name">What is Halving</h5>
+<p class="desc">Ravencoins are created each time a user discovers a new block. The rate of block creation is adjusted every 2016 blocks to aim for a constant 1.4 day adjustment period. The number of Ravencoins generated per block is set to decrease geometrically, with a 50% reduction every 2,100,000 blocks. The result is that the number of ravencoins in existence will not exceed slightly less than 21 billion.
+<br>
+Because the number of Ravencoins created each time a user discovers a new block (the block reward) is halved based on a fixed interval of blocks, and the time it takes on average to discover a block can vary based on mining power and the network difficulty, the exact time when the block reward is halved can vary as well. Consequently, the time the last Ravencoin will be created will also vary, and is subject to speculation based on assumptions. </p></div>
+<div class="col-12 col-lg-6 skill">
+<img src="img/halving.png" alt="messaging" class="image">
+<h5 class="name">When?</h5>
+<p class="desc">In Approximately 4 years at block 2,100,000 the halving will take place and the reward per block will drop from 5,000 to 2,500 Raven. This will continue with each subsequent 2,100,000 blocks until the reward amount can no longer be halved.</p></div>`;
+
 window.addEventListener('click', outsideModalClick);
 
 function outsideModalClick(e) {
@@ -171,14 +186,16 @@ function outsideModalClick(e) {
 
 function identifyService() {
 	let reqService = currentService[0].id;
-	if (reqService === 'design-development') {
-		detailsDiv.innerHTML = devHTML;
-	} else if (reqService === 'ecommerce') {
-		detailsDiv.innerHTML = ecomHTML;
-	} else if (reqService === 'marketing') {
-		detailsDiv.innerHTML = marketHTML;
+	if (reqService === 'assets') {
+		detailsDiv.innerHTML = assetsHTML;
+	} else if (reqService === 'algo') {
+		detailsDiv.innerHTML = algoHTML;
+	} else if (reqService === 'messaging') {
+		detailsDiv.innerHTML = messagingHTML;
 	} else if (reqService === 'voting') {
 		detailsDiv.innerHTML = voteHTML;
+	} else if (reqService === 'halving') {
+		detailsDiv.innerHTML = halveHTML;
 	} else {
 		// console.log('FAILLLL')
 	}
@@ -283,4 +300,6 @@ window.addEventListener('load', () => {
 		distance: '50vh'
 	}, 50);
 	}, 5000);
+}), particlesJS.load("home-section", "assets/particles.json", function() {
+    console.log("callback - particles-js config loaded")
 });
