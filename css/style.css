@@ -427,7 +427,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
 }
 .project .project-image {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
@@ -477,14 +477,13 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
 }
 .project .project-about .project-btn .std-button {
-  margin: 10px;
+  margin: 4px;
 }
 .project .project-about .project-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #333333;
   letter-spacing: 1.5px;
-  padding-top: 20px
 }
 .project .project-about .project-desc {
   font-family: "Montserrat", sans-serif;
