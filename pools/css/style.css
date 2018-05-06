@@ -141,6 +141,9 @@ background-color: #f9a0ffe6;
 body.status-page .container {
     max-width: 960px
 }
+.fa-lg {
+    font-size: 30px;
+}
 body.status-page .list-group.components {
 width: 100%;
     margin-bottom: 20px;
