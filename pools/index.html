@@ -10,25 +10,32 @@
      <title>Ravencoin | Pools</title>
      <link href="libs/css/google-api-fonts.css" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="libs/css/all-81fdbf996d.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-	    crossorigin="anonymous">
-     <link href="libs/css/ionicons.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
      <script src="libs/js/jquery.min.js"></script>
      <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body class="status-page ">
      <div class="container">
-     <div class="section-messages">
+       <div class=section-head>
+         <div class="section-title">
+           Ravencoin Pools List
+         </div>
+         <div class="section-info">
+           this page refreshes every 5 minutes
+         </div>
+       </div>
+     <div class="section-status-pool">
+        <div class="alert alert-success"></div>
      </div>
-     <div class="section-status">
+     <div class="section-status-stratum">
         <div class="alert alert-success"></div>
      </div>
      <div class="section-components">
         <ul class="list-group components">
            <li class="list-group-item group-name">
-              <strong>Ravencoin Pools</strong>
+              <strong>Ravencoin Pools Front-End</strong>
               <div class="pull-right">
-                 <poolStatus><i class="fas fa-check-circle text-component-1 greens" data-toggle="tooltip" title="Operational"></i></poolStatus>
+                 <poolStatus><i class="fas fa-circle text-component-1 greens" data-toggle="tooltip" title="Operational"></i></poolStatus>
               </div>
            </li>
            <div class="group-items">
@@ -36,11 +43,18 @@
               </poolCat>
            </div>
         </ul>
-     </div>
-     <div class="section-timeline">
-     <h1>Recent Reports</h1>
-     <timeline>
-     </timeline>
+         <ul class="list-group components">
+           <li class="list-group-item group-name">
+              <strong>Ravencoin Pools Stratums</strong>
+              <div class="pull-right">
+                 <stratumStatus><i class="fas fa-circle text-component-1 greens" data-toggle="tooltip" title="Operational"></i></stratumStatus>
+              </div>
+           </li>
+           <div class="group-items">
+              <stratumCat>
+              </stratumCat>
+           </div>
+        </ul>
      </div>
    </div>
   </body>

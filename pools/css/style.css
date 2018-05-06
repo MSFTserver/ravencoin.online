@@ -1,8 +1,23 @@
 body.status-page {
 background-color: #000;
-color: #868686;
+background-image: url(https://ravencoin.network/img/background.png);
+background-size: 70%;
+color: #000;
 }
-p, strong { color: #868686 !important; }
+.section-head {
+    color: #fff;
+    background: #422175;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.section-title {
+    text-align: center;
+    font-size: 50px;
+}
+.section-info {
+    text-align: center;
+}
+p, strong { color: #373d42 !important; }
 .reds { color: #9b2626 !important; }
 .blues { color: #3498db !important; }
 .greens { color: #128407 !important; }
@@ -26,6 +41,7 @@ padding: 40px 0 !important;
 background-color: #F7CA18;
 border-color: #deb515;
 color: white;
+border-radius: 5px;
 }
 .alert.alert-success {
 background-color: #128407;
@@ -110,17 +126,33 @@ border-left-color: #363434 !important;
 border-right-color: #363434 !important;
 }
 body.status-page .list-group .list-group-item {
-background-color: #000000;
+background-color: #74aede;
 border: 1px solid #363434;
 }
+.group-items>poolcat>li:nth-child(odd){
+    background-color: #f9f9f9 !important
+}
+.group-items>stratumcat>li:nth-child(odd){
+    background-color: #f9f9f9 !important
+}
 body.status-page .list-group .list-group-item.group-name {
-background-color: #323232;
+background-color: #f9a0ffe6;
+}
+body.status-page .container {
+    max-width: 960px
 }
 body.status-page .list-group.components {
-border-color: #383636;
+width: 100%;
+    margin-bottom: 20px;
+    padding: 14px;
+    /border: 1px solid #5d2e97;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #f5f5f5
 }
 body.status-page .list-group.components a {
-color: #606060 !important;
+color: #000 !important;
 }
 .footer a {
 color: #333333;
